@@ -1,8 +1,8 @@
 from flask import Flask, jsonify
 import psycopg2
-
+from flask_cors import CORS
 app = Flask(__name__)
-
+CORS(app)
 # Define your database connection parameters
 db_params = {
     "dbname": "postgres",
@@ -14,7 +14,7 @@ db_params = {
 }
 
 
-@app.route('/api/get_data', methods=['GET'])
+@app.route('/', methods=['GET'])
 def get_data():
     try:
         # Establish a connection to the PostgreSQL database
