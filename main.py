@@ -5,11 +5,12 @@ app = Flask(__name__)
 
 # Define your database connection parameters
 db_params = {
-    "dbname": "name",
-    "user": "name",
-    "password": "name",
-    "host": "googl.com",
-    "port": "0000"
+    "dbname": "postgres",
+    "user": "postgres",
+    "password": "vizvacons123",
+    # Change this if your database is hosted elsewhere
+    "host": "tmsdb.cnqltqgk9yzu.us-east-1.rds.amazonaws.com",
+    "port": "5432"
 }
 
 
